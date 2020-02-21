@@ -1,0 +1,257 @@
+/* Fixed page size javascript
+var container= document.getElementById("container");
+container.style.height=(window.innerHeight);
+container.style.width=window.innerWidth;*/
+/* style.css -- sidebar menu css*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #d3d3d3;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: black;
+  line-height: 70px;
+  text-align: center;
+  background: #808080;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: black;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  /*background: #042331;*/
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: black;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  margin-left: 0%;
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 250px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+section{
+  /*background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;*/
+  transition: all .5s;
+}
+/*#transit{
+  transition: all .5s;
+}
+#transit:transition ~ section #{
+  margin-right: 1000px;
+}*/
+
+/*chartbar.css code*/
+$color-paid: #7fdbff;
+$color-sent: #39cccc;
+
+body, html {
+  height: 100%;
+}
+/*body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}*/
+
+#q-graph {
+  display: block; /* fixes layout wonkiness in FF1.5 */
+  position: relative; 
+  width: 600px; 
+  height: 300px;
+  margin: 1.1em 0 0; 
+  padding: 0;
+  background: transparent;
+  font-size: 11px;
+  margin-left: 250px;
+}
+
+#q-graph caption {
+  caption-side: top; 
+  width: 600px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  top: -40px;
+  position: relative; 
+  z-index: 10;
+  font-weight: bold;
+}
+
+#q-graph tr, #q-graph th, #q-graph td { 
+  position: absolute;
+  bottom: 0; 
+  width: 100px; 
+  z-index: 2;
+  margin: 0; 
+  padding: 0;
+  text-align: center;
+}
+
+#q-graph td {
+  transition: all .3s ease;
+  
+  &:hover {
+    background-color: desaturate(#85144b, 100);
+    opacity: .9;
+    color: white;
+  }
+}
+  
+#q-graph thead tr {
+  left: 100%; 
+  top: 50%; 
+  bottom: auto;
+  margin: -2.5em 0 0 5em;}
+#q-graph thead th {
+  width: 7.5em; 
+  height: auto; 
+  padding: 0.5em 1em;
+}
+#q-graph thead th.sent {
+  top: 0; 
+  left: 0; 
+  line-height: 2;
+}
+#q-graph thead th.paid {
+  top: 2.75em; 
+  line-height: 5;
+  left: 0; 
+}
+
+#q-graph tbody tr {
+  height: 296px;
+  padding-top: 2px;
+  border-right: 2px solid #C4C4C4; 
+  color: #AAA;
+}
+#q-graph #q1 {
+  left: 0px;
+}
+#q-graph #q2 {left: 150px;}
+#q-graph #q3 {left: 300px;}
+#q-graph #q4 {left: 450px; border-right: none;}
+#q-graph tbody th 
+{bottom: -1.75em; 
+  vertical-align: top;
+font-weight: normal; 
+color: #333;
+}
+#q-graph .bar {
+  width: 60px; 
+  border: 1px solid; 
+  border-bottom: none; 
+  color: #000;
+}
+#q-graph .bar p {
+  color: black;
+  margin: 3px 0 0; 
+  padding: 0;
+  opacity: .9;
+}
+#q-graph .sent {
+  left: 13px; 
+  background-color: $color-sent;
+  border-color: transparent;
+}
+#q-graph .paid {
+  left: 77px; 
+  background-color: $color-paid;
+  border-color: transparent;
+}
+
+
+#ticks {
+  position: relative; 
+  top: -300px; 
+  left: 2px;
+  width: 596px; 
+  height: 300px; 
+  z-index: 1;
+  margin-bottom: -300px;
+  font-size: 10px;
+  font-family: "fira-sans-2", Verdana, sans-serif;
+  margin-left: 250px;
+}
+
+#ticks .tick {
+  position: relative; 
+  border-bottom: 2px solid #C4C4C4; 
+  width: 600px;
+}
+
+#ticks .tick p {
+  position: absolute; 
+  left: -5em; 
+  top: -0.8em; 
+  margin: 0 0 0 0.5em;
+}
+
+/*For Header - Dashboard and overview*/
+p{
+  margin-left: 150px;
+}
+h1{
+  margin-left: 150px;
+}

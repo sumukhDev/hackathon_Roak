@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sider Menu Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="invoice.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js.bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>Milk Man</header>
+  <ul>
+    <li><a href="#"><i class="fas fa-home"></i>Dashboard</a></li>
+    <li><a href="#"><i class="fas fa-file"></i>Pages</a></li>
+    <li><a href="#"><i class="fas fa-users"></i>Team</a></li>
+    <li><a href="#"><i class="fas fa-shopping-cart"></i>Orders</a></li>
+    <li><a href="#"><i class="fas fa-cog"></i>Setting</a></li>
+    <li><a href="invoice.html"><i class="fas fa-receipt"></i>Invoice</a></li>
+  </ul>
+</div>
+<!--meta name="viewport-width"-->
+  <section>
+    <p style="width: 100%;">Payments</p>
+    <table>
+       <tr>
+        <td><h1 style="width: 100%">Invoice #SDF9823KD</h1></td>
+        <td><button class ="btn"value="Download" style="margin-left: 500px;">Download</button></td>
+        <td><button value="Pay" class="btn btn-primary">Pay</button></td>
+       </tr>
+      </table>
+      <hr style="margin-left: 150px;margin-right: 150px;">
+   
+    <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 padding">
+    <div class="card">
+        <div class="card-header p-4">
+            <div class="float-center">
+                <h3 class="mb-0">Invoice from Dashboard</h3>
+                <p class="mb-0">Invoice #SDF9823KD</p>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row mb-4">
+                <div class="col-sm-6">
+                    <h5 class="mb-3">Invoice From:</h5>
+                    <h3 class="text-dark mb-1">Tulsi Vanol</h3>
+                    <div>CEO of CrazyBeing.tech</div>
+                    <div>123 Baker's Street</div>
+                    <div>San Francisco,CA</div>
+                    <div>Phone: +91 9876543210</div>
+                </div>
+                <div class="col-sm-6" id="rightside">
+                    <h5 class="mb-3">Invoice To:</h5>
+                    <h3 class="text-dark mb-1">Edward Jons</h3>
+                    <div>Abcd at Themers</div>
+                    <div>236 Main St.,#201</div>
+                    <div>LA,CA</div>
+                    <div>Phone: +61 123456</div>
+                </div>
+            </div>
+            <div class="table-responsive-sm">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Hours</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="left">Iphone 10X with headphone</td>
+                            <td class="right">125</td>
+                            <td class="center">$6,250</td>
+                        </tr>
+                        <tr>
+                            <td class="left">Iphone 8X with extended warranty</td>
+                            <td class="right">15</td>
+                            <td class="center">$750</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                
+                <div class="col-lg-4 col-sm-5 ml-auto">
+                    <table class="table table-clear">
+                        <tbody>
+                            <tr>
+                                <td class="left">
+                                    <strong class="text-dark">Subtotal</strong>
+                                </td>
+                                <td class="right">$7,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer bg-white">
+            <p class="mb-0">Milk-O-Man : Your Order will be delivered Tomorrow.</p>
+        </div>
+    </div>
+</div>
+</section>
+  </body>
+</html>
