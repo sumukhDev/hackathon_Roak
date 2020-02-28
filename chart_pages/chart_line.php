@@ -36,15 +36,15 @@
 window.onload = function() {
 
   var chart1 = new CanvasJS.Chart("chartContainer1", {
-  //theme: "light1", // "light1", "light2", "dark1", "dark2"
-  backgroundColor:"#DFDFDF",
+  theme: "dark1", // "light1", "light2", "dark1", "dark2"
+
   exportEnabled: true,
   animationEnabled: true,
   title: {
     text: "Orders"
   },
   data: [{
-    type: "line",
+    type: "spline",
     startAngle: 25,
     toolTipContent: "<b>{label}</b>: {y}k",
     //showInLegend: "true",
@@ -58,8 +58,8 @@ window.onload = function() {
 });
 
 var chart2 = new CanvasJS.Chart("chartContainer2", {
-  //theme: "light1", // "light1", "light2", "dark1", "dark2"
-  backgroundColor:"#DFDFDF",
+  theme: "dark1", // "light1", "light2", "dark1", "dark2"
+
   exportEnabled: true,
   animationEnabled: true,
   title: {
@@ -80,8 +80,8 @@ var chart2 = new CanvasJS.Chart("chartContainer2", {
 });
 // Chart -2
 var chart3 = new CanvasJS.Chart("chartContainer3", {
-  //theme: "light1", // "light1", "light2", "dark1", "dark2"
-  backgroundColor:"#DFDFDF",
+  theme: "dark1", // "light1", "light2", "dark1", "dark2"
+  backgroundColor:"green",
   exportEnabled: true,
   animationEnabled: true,
   title: {

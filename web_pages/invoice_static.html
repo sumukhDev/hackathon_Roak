@@ -7,12 +7,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="invoice.css">
 </head>
+<style type="text/css">
+    @media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+</style>
 <body>
 <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 padding">
     <div class="card">
         <div class="card-header p-4">
             <div class="float-center">
-                <input type="button" class="btn btn-primary float-right" name="print" value="Print">
+                
+                <input type="button" class="btn btn-primary float-right no-print" name="print" value="Print" onClick="window.print()">
                 <h3 class="mb-0">Invoice from Dashboard</h3>
                 <p class="mb-0">Invoice #SDF9823KD</p>
             </div>

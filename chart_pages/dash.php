@@ -52,28 +52,28 @@
               <div class="panel-body">
                 <div class="col-md-3">
                   <div class="well dash-box">
-                    <h2 class="glyphicon glyphicon-briefcase" aria-hidden="true"></h2>
+                    <h2 class="fas fa-briefcase" aria-hidden="true"></h2>
                     <h2>$20000</h2>
                     <h4>Budget</h4>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="well dash-box">
-                    <h2 class="glyphicon glyphicon-hourglass" aria-hidden="true"></h2>
+                    <h2 class="fas fa-hourglass" aria-hidden="true"></h2>
                     <h2>120</h2>
                     <h4>Total Hours</h4>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="well dash-box">
-                    <h2 class="glyphicon glyphicon-stats" aria-hidden="true"></h2>
+                    <h2 class="fa fa-signal" aria-hidden="true"></h2>
                     <h2>85%</h2>
                     <h4>Progress</h4>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="well dash-box">
-                    <h2 class="glyphicon glyphicon-usd" aria-hidden="true"></h2>
+                    <h2 class="fa fa-cog  " aria-hidden="true"></h2>
                     <h2>$5</h2>
                     <h4>Cost/Unit</h4>
                   </div>
